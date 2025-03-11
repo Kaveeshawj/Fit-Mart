@@ -1,0 +1,11 @@
+# Ignore build files and caches
+.gradle/
+caches/
+.idea/
+build/
+*.jar
+*.zip
+*.apk
+*.iml
+wrapper/
+local.properties

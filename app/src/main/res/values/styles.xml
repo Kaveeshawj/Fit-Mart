@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/button</item>
+        <item name="colorPrimaryVariant">@color/text</item>
+
+        <item name="android:statusBarColor">@color/button</item>
+    </style>
+
+
+    <style name="CustomTextInputStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/text</item> <!-- Outline color when focused -->
+        <item name="hintTextColor">@color/text</item> <!-- Hint text color -->
+        <item name="android:textColor">@color/text</item> <!-- User input text color -->
+        <item name="boxBackgroundColor">@android:color/transparent</item> <!-- Background color of TextInputLayout -->
+    </style>
+
+
+
+
+</resources>

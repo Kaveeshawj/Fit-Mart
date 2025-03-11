@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookTrainerActivity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <!-- Trainer Image -->
+            <ImageView
+                android:id="@+id/trainerImage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:contentDescription="Trainer Image"
+                android:scaleType="centerCrop"
+                tools:srcCompat="@drawable/user" />
+
+            <!-- Trainer Name -->
+            <TextView
+                android:id="@+id/trainerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:text="Trainer Name"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- Specialization -->
+            <TextView
+                android:id="@+id/trainerSpecialization"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:text="Specialization"
+                android:textSize="16sp" />
+
+            <!-- Experience -->
+            <TextView
+                android:id="@+id/trainerExperience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:text="Experience"
+                android:textSize="16sp" />
+
+            <!-- Price -->
+            <TextView
+                android:id="@+id/trainerPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:text="Fee: Rs. 0.00 per hour"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="16sp" />
+
+            <!-- Calendar View -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Select Appointment Date"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <CalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:firstDayOfWeek="2" />
+
+
+            <!-- Select Appointment Time -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Select Appointment Time"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/selectTimeButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/button"
+                android:text="Select Time"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/selectedTimeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Selected Time: Not Set"
+                android:textSize="14sp" />
+
+            <!-- Trainer Availability Status -->
+            <TextView
+                android:id="@+id/trainerAvailabilityStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Availability: Checking..."
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="16sp" />
+
+            <!-- Availability Check -->
+            <Button
+                android:id="@+id/checkAvailabilityButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/button"
+                android:text="Check Availability"
+                android:textColor="@android:color/white" />
+
+            <!-- Call Trainer Button -->
+            <Button
+                android:id="@+id/callTrainerButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/button"
+                android:text="Call Trainer"
+                android:textColor="@android:color/white" />
+
+            <!-- Additional Notes Input -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Additional Notes (Optional)"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/additionalNotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="top"
+                android:hint="Enter your notes here..."
+                android:inputType="textMultiLine"
+                android:minLines="3" />
+
+            <!-- Confirm Booking Button -->
+            <Button
+                android:id="@+id/confirmBookingButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/button"
+                android:text="Confirm Booking"
+                android:textColor="@android:color/white"
+                android:enabled="false"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

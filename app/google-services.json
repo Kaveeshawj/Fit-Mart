@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "304817891209",
+    "project_id": "fit-mart-67fa3",
+    "storage_bucket": "fit-mart-67fa3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304817891209:android:4b4464117479978f972358",
+        "android_client_info": {
+          "package_name": "lk.jiat.fitmart"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFkb1ZLoxcwSOveOc5TEEZ9uyEk37_9OI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
